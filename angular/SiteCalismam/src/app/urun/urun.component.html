@@ -1,0 +1,26 @@
+<h3 *ngIf="urunler;else:urunYok">{{title}}</h3>
+<div class="form-group">
+  <input 
+  class="form-control" 
+  id="aranacakEleman" 
+  placeholder="Aramak İstediğiniz Ürünü Giriniz"
+  [(ngModel)]="urunBulucu">
+ 
+</div>
+<ng-template #urunYok>
+    <div class="alert alert-primary" role="alert">
+        Ürün Bulunamadı!
+      </div>
+</ng-template>
+<div class="row">
+    <div *ngFor="let urun of urunler | urunFiltresi:urunBulucu" class="card" style="width: 18rem;">
+        <img [src]="urun.urunImgUrl" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{urun.urunIsim}} {{urun.urunDeger | currency:'USD'}}</h5>
+          <p class="card-text">
+              {{urun.urunAciklama}}
+          </p>
+          <a (click)="sepeteEkle(urun)" class="btn btn-primary">Sepete Ekle</a>
+        </div>
+      </div>
+      

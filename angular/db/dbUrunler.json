@@ -1,0 +1,8 @@
+{
+  "urunler":[
+    {"urunId":1, "urunIsim":"Telefon", "urunDeger":1500, "urunKategoriId":1, "urunAciklama":"Samsung","urunImgUrl":"https://images.unsplash.com/photo-1526498460520-4c246339dccb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" },
+    {"urunId":2, "urunIsim":"Tablet", "urunDeger":2000, "urunKategoriId":2, "urunAciklama":"Huawei","urunImgUrl":"https://images.unsplash.com/photo-1549821053-043114c91bdd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=751&q=80" }],
+ "kategoriler":[   
+    {"kategoriId":1,"kategoriIsim":"Telefon"},
+    {"kategoriId":2,"kategoriIsim":"Tablet"}]
+}
